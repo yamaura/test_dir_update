@@ -2,7 +2,7 @@ language: generic
 matrix:
   include:
   - name: rsync
-    env: CMD=env
+    env: CMD=rsync
   - name: tar
     env: CMD=tar
 script:
