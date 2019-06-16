@@ -1,0 +1,12 @@
+language: generic
+matrix:
+  include:
+  - name: rsync
+    env: CMD=env
+  - name: tar
+    env: CMD=tar
+script:
+- make -i $CMD
+- make test
+
+# vim:set sw=2 :
