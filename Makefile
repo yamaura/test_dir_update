@@ -13,7 +13,7 @@ target: ./build.sh
 new:
 	mkdir -p new
 
-rsync: CMD:=rsync -a
+rsync: CMD:=rsync -a --no-perms
 rsync: $(OBJS)
 	$(CMD) original/ target/
 	$(CMD) original/ new/
