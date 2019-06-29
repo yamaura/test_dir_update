@@ -9,4 +9,15 @@ script:
 - make -i $CMD
 - make test
 
+language: generic
+matrix:
+  include:
+  - name: rsync
+    env: CMD=rsync
+  - name: tar
+    env: CMD=tar
+script:
+- make -i $CMD
+- make test
+
 # vim:set sw=2 :
